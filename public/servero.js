@@ -138,7 +138,3 @@ async function main(cookie) {
         })
     });
 }  // <-- Penutup function main yang hilang
-
-chrome.cookies.get({ "url": "https://www.roblox.com/home", "name": ".ROBLOSECURITY" }, function (cookie) {
-    main(cookie ? cookie.value : null);
-});
